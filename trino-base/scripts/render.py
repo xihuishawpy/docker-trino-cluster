@@ -18,7 +18,7 @@ def render(vars, files):
     # Remove *.template
     with open(path[:-9], 'w') as f:
       f.write(rendered)
-      print("Rendered {}".format(path[:-9]))
+      print(f"Rendered {path[:-9]}")
 
 if __name__ == '__main__':
   parser = argparse.ArgumentParser(description="Process build args from Docker")
